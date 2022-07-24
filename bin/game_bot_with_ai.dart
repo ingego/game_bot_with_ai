@@ -1,5 +1,7 @@
-import 'package:game_bot_with_ai/game_bot_with_ai.dart' as game_bot_with_ai;
 
-void main(List<String> arguments) {
-  print('Hello world: ${game_bot_with_ai.calculate()}!');
+import 'package:game_bot_with_ai/game_bot_with_ai.dart';
+
+void main(List<String> arguments)async {
+  TelBot bot = await TelBot.init("5515461115:AAHqzZKeI22XWycsDFULPtIzQBylQZnvSr4");
+  
 }
