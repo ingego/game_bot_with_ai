@@ -1,8 +1,37 @@
-import 'package:game_bot_with_ai/game_bot_with_ai.dart';
 import 'package:test/test.dart';
-
+import 'dart:io' as io;
 void main() {
-  test('calculate', () {
-    expect(calculate(), 42);
+  test('calculate', ()async {
+    var res = await io.Process.run("py", [r"test.py"]);
   });
+  
 }
+
+/*
+rgb = 56 10 10; 
+ нет цвета - черный 
+ 255 255 255 - белый 
+ r = 56 
+ g = 10 
+ b = 10 
+
+           r  g  b
+ Matrix =[[
+  [0, 0, 0, 0, 0, 0,],
+  [0, 0, 56, 56, 0, 0,], 
+  [0, 0, 56, 56, 0, 0,], 
+  [0, 0, 0, 0, 0, 0, ]
+ ],[
+    [0, 0, 0, 0, 0, 0,],
+  [0, 0, 10, 10, 0, 0,], 
+  [0, 0, 10, 10, 0, 0,], 
+  [0, 0, 0, 0, 0, 0, ] 
+ ],[[0, 0, 0, 0, 0, 0,],
+  [0, 0, 10, 10, 0, 0,], 
+  [0, 0, 10, 10, 0, 0,], 
+  [0, 0, 0, 0, 0, 0, ]]]
+
+
+
+
+*/
